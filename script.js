@@ -1,6 +1,6 @@
 // script.js
 
-// 1. Typing animation on header subtitle
+// 1. Typing animation
 const typingText = "Full Stack Developer | Java | Spring Boot | Web Technologies";
 const subtitle = document.querySelector("header p");
 
@@ -22,7 +22,7 @@ darkModeToggle.title = "Toggle Dark Mode";
 darkModeToggle.className = "dark-toggle";
 document.body.appendChild(darkModeToggle);
 
-// Load saved mode
+// Load theme from localStorage
 if (localStorage.getItem("theme") === "dark") {
   document.body.classList.add("dark");
 }
@@ -32,7 +32,7 @@ darkModeToggle.addEventListener("click", () => {
   localStorage.setItem("theme", document.body.classList.contains("dark") ? "dark" : "light");
 });
 
-// 3. Smooth Scroll for anchor links
+// 3. Smooth Scroll
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
   anchor.addEventListener("click", function (e) {
     e.preventDefault();
@@ -42,7 +42,7 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
   });
 });
 
-// 4. Fade-in animation on scroll
+// 4. Fade-in on Scroll
 const observer = new IntersectionObserver(entries => {
   entries.forEach(entry => {
     if (entry.isIntersecting) {
