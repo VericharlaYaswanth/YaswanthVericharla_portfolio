@@ -1,7 +1,5 @@
-// script.js
-
-// 1. Typing animation
-const typingText = "Full Stack Developer | Java | Spring Boot | Web Technologies";
+// Typing effect
+const typingText = "Full Stack Developer | Java | Spring Boot | Web Technologies | CyberSecurity and BlockChain Engineer";
 const subtitle = document.querySelector("header p");
 
 let index = 0;
@@ -15,34 +13,30 @@ function type() {
 subtitle.textContent = "";
 type();
 
-// 2. Dark Mode Toggle
+// Dark Mode
 const darkModeToggle = document.createElement("button");
 darkModeToggle.textContent = "🌓";
 darkModeToggle.title = "Toggle Dark Mode";
 darkModeToggle.className = "dark-toggle";
 document.body.appendChild(darkModeToggle);
 
-// Load theme from localStorage
 if (localStorage.getItem("theme") === "dark") {
   document.body.classList.add("dark");
 }
-
 darkModeToggle.addEventListener("click", () => {
   document.body.classList.toggle("dark");
   localStorage.setItem("theme", document.body.classList.contains("dark") ? "dark" : "light");
 });
 
-// 3. Smooth Scroll
+// Smooth Scroll
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
   anchor.addEventListener("click", function (e) {
     e.preventDefault();
-    document.querySelector(this.getAttribute("href")).scrollIntoView({
-      behavior: "smooth"
-    });
+    document.querySelector(this.getAttribute("href")).scrollIntoView({ behavior: "smooth" });
   });
 });
 
-// 4. Fade-in on Scroll
+// Scroll fade animation
 const observer = new IntersectionObserver(entries => {
   entries.forEach(entry => {
     if (entry.isIntersecting) {
@@ -50,9 +44,7 @@ const observer = new IntersectionObserver(entries => {
       observer.unobserve(entry.target);
     }
   });
-}, {
-  threshold: 0.1
-});
+}, { threshold: 0.1 });
 
 document.querySelectorAll('section').forEach(section => {
   section.classList.add("before-fade");
