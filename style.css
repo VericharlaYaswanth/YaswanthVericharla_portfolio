@@ -35,18 +35,7 @@ header p {
   opacity: 0.9;
 }
 
-/* About Section */
-#about {
-  text-align: center;
-  max-width: 800px;
-  margin: auto;
-  margin-bottom: 60px;
-  background: #ffffff;
-  padding: 30px;
-  border-radius: 16px;
-  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.05);
-}
-
+/* Profile Image */
 .profile-img {
   width: 150px;
   height: 150px;
@@ -84,7 +73,7 @@ section li {
   margin-bottom: 8px;
 }
 
-/* Projects */
+/* Project Cards */
 .project {
   background: #f9fafb;
   border: 1px solid #dbeafe;
@@ -131,6 +120,18 @@ section li {
   background-color: #3730a3;
 }
 
+/* Internships Styling */
+#internships ul {
+  list-style-type: square;
+  margin-left: 20px;
+  color: #444;
+}
+
+#internships li {
+  margin-bottom: 10px;
+  font-weight: 500;
+}
+
 /* Footer */
 footer {
   text-align: center;
@@ -169,7 +170,7 @@ body.dark .project a {
   background-color: #6366f1;
 }
 
-/* Dark Mode Toggle */
+/* Dark Mode Toggle Button */
 .dark-toggle {
   position: fixed;
   top: 16px;
@@ -189,7 +190,7 @@ body.dark .dark-toggle {
   color: white;
 }
 
-/* Fade-in Animation */
+/* Fade-in Scroll Animation */
 .before-fade {
   opacity: 0;
   transform: translateY(40px);
