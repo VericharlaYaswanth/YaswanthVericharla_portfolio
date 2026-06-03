@@ -1,140 +1,377 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Yaswanth Vericharla | Portfolio</title>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yaswanth Vericharla | Portfolio</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-  <header>
-    <h1>Yaswanth Vericharla</h1>
-    <p>Loading...</p>
-  </header>
+    <!-- Navigation -->
 
-  <section id="about">
-    <img src="yas1.jpg" alt="Yaswanth Vericharla" class="profile-img" />
-    <h2>About Me</h2>
-    <p>
-      I'm a Computer Science Engineering student with specialization in CyberSecurtity and BlockChain Technology from KL University with a strong foundation in networking, AI tools, and full-stack development. I’m passionate about building efficient tech solutions and actively involved in academic and technical events.
-    </p>
-  </section>
+    <nav>
+        <div class="logo">Yaswanth V.</div>
 
-  <section id="education">
-    <h2>Education</h2>
-    <div class="edu">
-      <h3>KL University</h3>
-      <p><strong>B.Tech in Computer Science Engineering</strong> (2023 – Present)</p>
-      <p>CGPA: 9.04</p>
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#certifications">Certificates</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
 
-      <h3>Bhashyam Jr College</h3>
-      <p><strong>Intermediate (MPC)</strong> (2021 – 2023)</p>
-      <p>Percentage: 89%</p>
+    <!-- Hero Section -->
 
-      <h3>Loyola Public School, Guntur</h3>
-      <p><strong>ICSE</strong> (2011 – 2021)</p>
-      <p>Percentage: 81.33%</p>
-    </div>
-  </section>
+    <header class="hero">
 
-  <section id="internships">
-    <h2>Internships</h2>
-    <ul>
-      <li><strong>CISCO - Networking Essentials (Virtual)</strong> (June – July 2024)</li>
-      <li><strong>CISCO - Introduction to Packet Tracer (Virtual)</strong> (June – July 2024)</li>
-    </ul>
-  </section>
+        <div class="hero-content">
 
-  <section id="certifications">
-    <h2>Certifications</h2>
-    <ul>
-      <li><strong>Data Visualization: Empowering Business With Effective Insights, TATA Group</strong></li>
-      <li><strong>Cybersecurity Analyst, TATA Group</strong></li>
-      <li><strong>AWS Cloud Practitioner Essentials, Amazon Web Services</strong></li>
-      <li><strong>Google Prompting Essentials, Google</strong></li>
+            <h1>Hi, I'm Yaswanth Vericharla</h1>
 
-      <!-- NEW CERTIFICATIONS ADDED -->
-      <li><strong>Oracle Cloud Infrastructure Architect Associate, Oracle University</strong></li>
-      <li><strong>Aviatrix Multicloud Network Associate, Aviatrix</strong></li>
-    </ul>
+            <p id="typing-text"></p>
 
-  <section id="skills">
-    <h2>Skills</h2>
-    <ul>
-      <li>Java, Spring Boot</li>
-      <li>JavaScript, HTML, CSS</li>
-      <li>Networking fundamentals</li>
-      <li>AI tools (proficient and tech-savvy)</li>
-    </ul>
-  </section>
+            <p>
+                Computer Science Engineering student specializing in
+                Cybersecurity and Blockchain Technology at KL University.
+                Passionate about building scalable applications,
+                secure systems, and innovative digital solutions.
+            </p>
 
-  <section id="activities">
-    <h2>Co-Curricular Activities</h2>
-    <ul>
-      <li>Class representative in 2nd year</li>
-      <li>Participated in “IoT Tech Expo”</li>
-      <li>Active in quizzes, debates, poster presentations</li>
-    </ul>
-  </section>
+            <div class="hero-buttons">
+                <a href="#projects" class="btn">View Projects</a>
+                <a href="resume.pdf" class="btn" download>
+                    Download Resume
+                </a>
+            </div>
 
-  <section id="projects">
-    <h2>Projects</h2>
+            <div class="social-links">
+                <a href="https://github.com/VericharlaYaswanth" target="_blank">
+                    GitHub
+                </a>
 
-    <div class="project">
-      <h3>Event Management System</h3>
-      <p>
-        Designed and developed an event management platform with admin and user roles, booking workflows, and payment tracking.
-      </p>
-      <a href="https://github.com/VericharlaYaswanth/Mayuka-EventManagementSystem" target="_blank">🔗 View Code</a>
-    </div>
+                <a href="https://linkedin.com" target="_blank">
+                    LinkedIn
+                </a>
 
-    <div class="project">
-      <h3>Job Portal</h3>
-      <p>
-        A full-stack job portal built using JavaScript, CSS, and Spring Boot. Enables candidates to apply and recruiters to manage listings.
-      </p>
-      <ul>
-        <li>User and recruiter login functionality</li>
-        <li>Job listing creation and filtering</li>
-        <li>Spring Boot RESTful backend</li>
-        <li>Clean and responsive UI</li>
-      </ul>
-      <a href="https://github.com/VericharlaYaswanth/JobPortal.git" target="_blank">🔗 View Code</a>
-    </div>
+                <a href="mailto:yaswanth.vericharla@gmail.com">
+                    Email
+                </a>
+            </div>
 
-    <div class="project">
-      <h3>Red Team Automation Tool</h3>
-      <p>
-        Developed an automated red team toolkit for cybersecurity testing that simulates real-world attack scenarios. The tool performs reconnaissance, vulnerability scanning, and basic exploitation workflows to assist in penetration testing.
-      </p>
-      <ul>
-        <li>Automated reconnaissance and target enumeration</li>
-        <li>Integrated vulnerability scanning modules</li>
-        <li>Basic exploitation simulation for learning purposes</li>
-        <li>Designed for educational and ethical hacking use</li>
-      </ul>
-      <a href="https://github.com/VericharlaYaswanth/Redteam_automation" target="_blank">🔗 View Code</a>
-    </div>
+        </div>
 
-  </section>
+    </header>
 
-  <section id="hobbies">
-    <h2>Hobbies</h2>
-    <ul>
-      <li>Reading History</li>
-      <li>Listening to Podcasts</li>
-      <li>Playing Hockey</li>
-    </ul>
-  </section>
+    <!-- About -->
 
-  <footer>
-    <p>📍 Guntur, Andhra Pradesh, India</p>
-    <p>📞 +91-7396571512 | ✉️ yaswanth.vericharla@gmail.com</p>
-    <p>© 2026 Yaswanth Vericharla •</p>
-  </footer>
+    <section id="about">
 
-  <script src="script.js"></script>
+        <h2>About Me</h2>
+
+        <center>
+            <img src="yas1.jpg" alt="Yaswanth Vericharla" class="profile-img">
+        </center>
+
+        <p>
+            I'm Yaswanth Vericharla, a Computer Science undergraduate
+            specializing in Cybersecurity and Blockchain Technology at KL University.
+
+            I enjoy developing full-stack applications, exploring cybersecurity
+            concepts, and leveraging AI tools to solve real-world problems.
+
+            My interests include software engineering, networking,
+            cloud computing, and secure application development.
+        </p>
+
+    </section>
+
+    <!-- Highlights -->
+
+    <section id="achievements">
+
+        <h2>Highlights</h2>
+
+        <div class="achievement-container">
+
+            <div class="achievement-card">
+                <h3>9.04</h3>
+                <p>CGPA</p>
+            </div>
+
+            <div class="achievement-card">
+                <h3>6+</h3>
+                <p>Certifications</p>
+            </div>
+
+            <div class="achievement-card">
+                <h3>3+</h3>
+                <p>Major Projects</p>
+            </div>
+
+            <div class="achievement-card">
+                <h3>2+</h3>
+                <p>Internships</p>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- Education -->
+
+    <section id="education">
+
+        <h2>Education</h2>
+
+        <div class="edu">
+
+            <h3>KL University</h3>
+            <p><strong>B.Tech Computer Science Engineering</strong></p>
+            <p>2023 - Present</p>
+            <p>CGPA: 9.04</p>
+
+            <br>
+
+            <h3>Bhashyam Junior College</h3>
+            <p><strong>Intermediate (MPC)</strong></p>
+            <p>2021 - 2023</p>
+            <p>89%</p>
+
+            <br>
+
+            <h3>Loyola Public School, Guntur</h3>
+            <p><strong>ICSE</strong></p>
+            <p>2011 - 2021</p>
+            <p>81.33%</p>
+
+        </div>
+
+    </section>
+
+    <!-- Internships -->
+
+    <section id="internships">
+
+        <h2>Internships</h2>
+
+        <div class="card">
+            <h3>CISCO - Networking Essentials</h3>
+            <p>Virtual Internship | June - July 2024</p>
+        </div>
+
+        <br>
+
+        <div class="card">
+            <h3>CISCO - Introduction to Packet Tracer</h3>
+            <p>Virtual Internship | June - July 2024</p>
+        </div>
+
+    </section>
+
+    <!-- Skills -->
+
+    <section id="skills">
+
+        <h2>Technical Skills</h2>
+
+        <div class="skills-container">
+
+            <span class="skill">Java</span>
+            <span class="skill">Spring Boot</span>
+            <span class="skill">JavaScript</span>
+            <span class="skill">HTML5</span>
+            <span class="skill">CSS3</span>
+            <span class="skill">MySQL</span>
+            <span class="skill">Git</span>
+            <span class="skill">GitHub</span>
+            <span class="skill">AWS</span>
+            <span class="skill">Networking</span>
+            <span class="skill">Cybersecurity</span>
+            <span class="skill">AI Tools</span>
+
+        </div>
+
+    </section>
+
+    <!-- Certifications -->
+
+    <section id="certifications">
+
+        <h2>Certifications</h2>
+
+        <ul>
+            <li>Data Visualization: Empowering Business With Effective Insights - TATA</li>
+            <li>Cybersecurity Analyst - TATA</li>
+            <li>AWS Cloud Practitioner Essentials - AWS</li>
+            <li>Google Prompting Essentials - Google</li>
+            <li>Oracle Cloud Infrastructure Architect Associate - Oracle</li>
+            <li>Aviatrix Multicloud Network Associate - Aviatrix</li>
+        </ul>
+
+    </section>
+
+    <!-- Projects -->
+
+    <section id="projects">
+
+        <h2>Projects</h2>
+
+        <div class="project-card">
+
+            <h3>Event Management System</h3>
+
+            <p>
+                Developed a complete event management platform supporting
+                event bookings, payments, and role-based access.
+            </p>
+
+            <div class="tech-stack">
+                <span>Java</span>
+                <span>Spring Boot</span>
+                <span>HTML</span>
+                <span>CSS</span>
+            </div>
+
+            <br>
+
+            <a href="https://github.com/VericharlaYaswanth/Mayuka-EventManagementSystem"
+                target="_blank">
+                View Project
+            </a>
+
+        </div>
+
+        <br>
+
+        <div class="project-card">
+
+            <h3>Job Portal</h3>
+
+            <p>
+                Full-stack recruitment platform for job seekers
+                and recruiters with REST APIs.
+            </p>
+
+            <div class="tech-stack">
+                <span>Spring Boot</span>
+                <span>JavaScript</span>
+                <span>MySQL</span>
+            </div>
+
+            <br>
+
+            <a href="https://github.com/VericharlaYaswanth/JobPortal"
+                target="_blank">
+                View Project
+            </a>
+
+        </div>
+
+        <br>
+
+        <div class="project-card">
+
+            <h3>Red Team Automation Tool</h3>
+
+            <p>
+                Automated cybersecurity toolkit for reconnaissance,
+                vulnerability scanning and penetration testing workflows.
+            </p>
+
+            <div class="tech-stack">
+                <span>Python</span>
+                <span>Cybersecurity</span>
+                <span>Automation</span>
+            </div>
+
+            <br>
+
+            <a href="https://github.com/VericharlaYaswanth/Redteam_automation"
+                target="_blank">
+                View Project
+            </a>
+
+        </div>
+
+    </section>
+
+    <!-- Activities -->
+
+    <section id="activities">
+
+        <h2>Co-Curricular Activities</h2>
+
+        <ul>
+            <li>Class Representative in 2nd Year</li>
+            <li>Participated in IoT Tech Expo</li>
+            <li>Active in Quizzes, Debates and Poster Presentations</li>
+        </ul>
+
+    </section>
+
+    <!-- Hobbies -->
+
+    <section id="hobbies">
+
+        <h2>Hobbies</h2>
+
+        <ul>
+            <li>Reading History</li>
+            <li>Listening to Podcasts</li>
+            <li>Playing Hockey</li>
+        </ul>
+
+    </section>
+
+    <!-- Contact -->
+
+    <section id="contact">
+
+        <h2>Contact Me</h2>
+
+        <form>
+
+            <input type="text" placeholder="Your Name" required>
+
+            <br><br>
+
+            <input type="email" placeholder="Your Email" required>
+
+            <br><br>
+
+            <textarea rows="5" placeholder="Your Message"></textarea>
+
+            <br><br>
+
+            <button type="submit">
+                Send Message
+            </button>
+
+        </form>
+
+    </section>
+
+    <!-- Footer -->
+
+    <footer>
+
+        <p>📍 Guntur, Andhra Pradesh, India</p>
+
+        <p>📧 yaswanth.vericharla@gmail.com</p>
+
+        <p>📞 +91-7396571512</p>
+
+        <p>© 2026 Yaswanth Vericharla. All Rights Reserved.</p>
+
+    </footer>
+
+    <script src="script.js"></script>
+
 </body>
 </html>
